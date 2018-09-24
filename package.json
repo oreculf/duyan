@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/oreculf/duyan#readme",
   "devDependencies": {
-    "@reach/router": "^1.2.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
@@ -64,6 +63,7 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@reach/router": "^1.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
