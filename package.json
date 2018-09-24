@@ -12,7 +12,7 @@
     "cypress:run": "cypress run",
     "precommit": "lint-staged",
     "lint": "lint-staged",
-    "prepush": "jest && cypress run"
+    "prepush": "jest"
   },
   "repository": {
     "type": "git",
