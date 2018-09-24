@@ -1,1 +1,5 @@
-"duyan analytics"  
+# DUYAN
+
+Duyan Stock Analytics
+
+by oreculf and alfienity

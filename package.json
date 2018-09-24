@@ -1,0 +1,91 @@
+{
+  "name": "duyan",
+  "version": "1.0.0",
+  "description": "Duyan Stock Analytics",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode=development",
+    "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "precommit": "lint-staged",
+    "lint": "lint-staged",
+    "prepush": "jest && cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oreculf/duyan.git"
+  },
+  "keywords": [
+    "duyan"
+  ],
+  "author": "oreculf and alfienity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oreculf/duyan/issues"
+  },
+  "homepage": "https://github.com/oreculf/duyan#readme",
+  "devDependencies": {
+    "@reach/router": "^1.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "cypress": "^3.1.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.0.0-rc.15",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "prop-types": "^15.6.2",
+    "regenerator-runtime": "^0.12.1",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "lint-staged": {
+    "{cypress,src}/**/*.{js,jsx}": [
+      "prettier --write --trailing-comma es5",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "testMatch": [
+      "**/*.test.(js|jsx)"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
