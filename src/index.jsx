@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "@reach/router";
+import "./index.scss";
 
 const App = () => (
   <div>
