@@ -70,7 +70,6 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.0",
-    "alphavantage": "^1.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
